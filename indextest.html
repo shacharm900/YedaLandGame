@@ -1,0 +1,95 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ידע-לנד</title>
+    <meta name="description" content="ידע-לנד" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="שחר מהלל, לירז אסידו וחנה אשכנזי" />
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Secular+One&display=swap');
+    </style>
+
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="indextest.html">
+
+                <!--הלוגו של המשחק שלכם-->
+                <img id="logo" src="images/GameLogo.png" />
+                <p style="color:white">ידע-לנד</p>
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+
+            <a class="closeAbout">✘</a>
+            <div id="myTXTdesign1">
+                <img style="margin-right: 75px" width="120" height="100" src="images/GameLogo.png" />
+                <h1 style="margin-right: 75px; margin-top: -3px;">אודות</h1>
+                <p style="margin-right:75px; margin-bottom:-5px;">אופיין ופותח בפרויקט במסגרת הקורסים</p>
+                <p>סביבות אינטראקטיביות 1 + תכנות אינטראקציה ואנימציה 1 - תשפ”ב</p>
+
+                <p><b>אפיון ופיתוח</b></p>
+                <p>שחר מהלל, לירז אסידו וחנה אשכנזי</p>
+                <a href="https://www.hit.ac.il/telem/overview" target="_blank"><img width="140" height="75" src="images/HitLogo.png" /></a><br /> <a href="https://www.hit.ac.il/telem/overview" target="_blank">הפקולטה לטכנולוגיות למידה </a><br />
+                <p><a href="מסמך מקורות - ידע-לנד.pdf" target="_blank">מסמך זכויות יוצרים</a></p>
+            </div>
+            <img style="float: left; padding-left: 43px; margin-block: -330px; " src="images/charcter.png" />
+        </div>
+
+
+
+
+
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+
+            <a class="closeHowToPlay">✘</a>
+            <div id="myTXTdesign2">
+
+                <h1 style="text-align:right">איך משחקים?</h1>
+                <p>  בחרו את התשובה הנכונה מבין התשובות האפשריות, הנמצאות על אחד מהמושבים בגלגל הענק </p>
+                <p>ראו את התקדמותכם במשחק לפי כמות הכרטיסים שאספתם, כאשר כל תשובה נכונה תזכה אותכם בכרטיס</p>
+                <img style="float:right" width="40" height="40" src="images/pauseBTN.png" /> <p style="margin-right: 50px; margin-top: 25px;"> על מנת להשהות את המשחק לחצו על כפתור ההשהייה</p>
+
+                <img style="float:right" width="40" height="40" src="images/speaker.png" /> <p style="margin-right: 50px; margin-top: 25px;">במידה ותרצו להשתיק את הסאונד במשחק לחצו על כפתור השתקת הסאונד</p>
+
+                <img style="float:right" width="40" height="40" src="images/magnifyingGlass.png" />  <p style="margin-right: 50px; margin-top: 25px;">   כל תמונה במשחק ניתנה להגדלה. זהה את האייקון בתוך התמונות על מנת להגדיל ולחץ על התמונה </p>
+                <br />
+                <p style="text-align:center; font-size:19px;"> <b>זכרו! </b>רק כשתאספו את כל הכרטיסים ותענו על כל השאלות נכון, תוכלו להעלות את כל המפלצות על הגלגל! </p>
+            </div>
+
+        </div>
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם (לא קובץ האנימייט)-->
+            <iframe id="gameIframe" src="YedaLandFinal.html" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+</html>
